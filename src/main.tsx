@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import Calculator from './pages/calculator.tsx'
 import './index.css'
+import Todo from './pages/todo.tsx'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "calculator",
     element: <Calculator />
+  },
+  {
+    path: "todo",
+    element: <Todo />
   },
 ])
 
